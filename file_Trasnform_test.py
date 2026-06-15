@@ -5,7 +5,7 @@ import numpy as np
 """this will clean up data and collect the info i need and load to a new csv file"""
 
 input_folder = "raw_data.csv"
-output_folder = "cleaned_data.csv"
+output_folder = "test_data.csv"
 #os.makedirs(output_folder, exist_ok=True)
 
 sample = ["testtt"]
@@ -26,11 +26,10 @@ final_columns = ["PLAYER_ID","PLAYER_NAME","TEAM_ID","TEAM_ABBREVIATION","AGE","
 df = pd.read_csv(input_folder, usecols = columns)
 # print(df[columns].head())
 # print(df[columns].info())
-
 new_values = []
 
 for i,k in df.iterrows():
-    PPG = (k["PTS"] / k["GP"])
+    PPG = (k / k["GP"])
     form_PPG = f"{PPG:.2f}"
 
     if k["AGE"] > 37:
