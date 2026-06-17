@@ -1,6 +1,6 @@
-#.env
-#secret.txt
-#test.py
-#raw_data.csv
-#file_Trasnform_test.py
-#test_data.csv
+.env
+secret.txt
+test.py
+raw_data.csv
+file_Trasnform_test.py
+test_data.csv
