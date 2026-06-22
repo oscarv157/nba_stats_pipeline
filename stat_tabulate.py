@@ -4,7 +4,7 @@ from tabulate import tabulate
 """This is just to check whats being stored in the cleaned data, output in a tabulate form"""
 
 input_folder = "cleaned_data.csv"
-#input_folder = "test_data.csv"
+# input_folder = "test_data.csv"
 df = pd.read_csv(input_folder)
 
 player_table  = tabulate(df, headers="keys",tablefmt='pretty', showindex=False)

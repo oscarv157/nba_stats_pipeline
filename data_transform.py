@@ -11,7 +11,7 @@ output_folder = "cleaned_data.csv"
 
 #i removed nickname from this along with other redundant columns
 columns = ["PLAYER_ID","PLAYER_NAME","TEAM_ID","TEAM_ABBREVIATION","AGE","GP","W","L","W_PCT",
-            "MIN","FGM","FGA","FG_PCT","FG3M","FG3A","FG3_PCT","FTM","FTA","FT_PCT","OREB","DREB","REB","AST","TOV",
+            "MIN","FGM","FGA","FG_PCT","FG3M","FG3A","FG3_PCT","FTM","FTA","FT_PCT","REB","AST","TOV",
             "STL","BLK","BLKA","PF","PFD","PTS","PLUS_MINUS","TEAM_COUNT"]
 
 columns2beAVG = ["MIN","FGM","FGA","FG3M","FG3A","FTM","FTA","REB","AST","TOV","STL","BLK","PTS"]
