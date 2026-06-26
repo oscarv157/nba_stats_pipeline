@@ -1,4 +1,6 @@
 # NBA Career Analytics Project
+"Who was the best 5th year player in the 2025-26 NBA season?"
+
 This project uses NBA data to build an end-to-end analytics pipeline. The data will be used to make analysis on 
 different types of statistics. The main goal is to group each NBA player to either age or different stages in their 
 career and identify top performing players. This project extracts NBA data, cleans it up, transforms it, 
@@ -25,3 +27,11 @@ Data Cleaning:
     The year_experience script comes in and adds a YEARS_PLAYED columns and calculates the years of experience for each 
     player. The FROM_YEAR columns was selected instead of draft year as their may be undrafted players in the data. This
     avoids any errors or mismanaging of data. 
+
+#Analysis:
+
+    This section is where the main course of the project is produced. Questions such as who was the top scorer or 
+    rebounder in the 2025-26 season are analyzed here. The scoring average per year of experience is tallied up here
+    in this portion. 
+    The main task here is to determined who was the top player per year. 
+    This done by....
