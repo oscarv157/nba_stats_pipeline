@@ -30,8 +30,11 @@ Data Cleaning:
 
 #Analysis:
 
-    This section is where the main course of the project is produced. Questions such as who was the top scorer or 
+    This section is where the main opbjective of the project is produced. Questions such as who was the top scorer or 
     rebounder in the 2025-26 season are analyzed here. The scoring average per year of experience is tallied up here
     in this portion. 
-    The main task here is to determined who was the top player per year. 
-    This done by....
+    The main task here is to determined who was the best overall player per year according to a standardized 
+    performance metric, consisted of points, rebounds,assists, blocks, and steals. This done by adding up the z scores 
+    for points, rebounds, assists, blocks, and steals. 
+    This section also list who had the highest averages for each stat per year specified. At the end, a list of the top 
+    10 players according to the sum of the z scores is generated. This finds top 10 players regardless of year. 
