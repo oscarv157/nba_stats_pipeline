@@ -2,7 +2,7 @@ import pandas as pd
 from tabulate import tabulate
 
 """This is just to check whats being stored in the cleaned data, output in a tabulate form"""
-
+#input_folder = "raw_data.csv"
 # input_folder = "cleaned_data.csv"
 # input_folder = "test_data.csv"
 input_folder = "enhanced_data.csv"
