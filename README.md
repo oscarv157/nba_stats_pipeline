@@ -38,3 +38,7 @@ Data Cleaning:
     for points, rebounds, assists, blocks, and steals. 
     This section also list who had the highest averages for each stat per year specified. At the end, a list of the top 
     10 players according to the sum of the z scores is generated. This finds top 10 players regardless of year. 
+
+#Visualization:
+
+    Implemented a dashboard interface via Streamlit. 
