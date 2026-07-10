@@ -69,10 +69,10 @@ def get_allAVG(): #this lists all the year specified players and their stat
         if top_yrA is None or points[2] > top_yrA["AST"]: #this is to get the year with highest AST
             top_yrA["YEARS_PLAYED"] = yr
             top_yrA["AST"] = float(round(points[2], 1))
-        if top_yrB is None or points[3] > top_yrA["BLK"]: #this is to get the year with highest BLK
+        if top_yrB is None or points[3] > top_yrB["BLK"]: #this is to get the year with highest BLK
             top_yrB["YEARS_PLAYED"] = yr
             top_yrB["BLK"] = float(round(points[3], 1))
-        if top_yrST is None or points[4] > top_yrA["STL"]: #this is to get the year with highest STL
+        if top_yrST is None or points[4] > top_yrST["STL"]: #this is to get the year with highest STL
             top_yrST["YEARS_PLAYED"] = yr
             top_yrST["STL"] = float(round(points[4], 1))
 
@@ -135,7 +135,7 @@ def topBlocker(year): #this finds the player who averaged the most blocks in spe
             if topPlayer is None or k["BLK"] > topPlayer["BLK"]:
                 topPlayer = k
 
-    # print(f"Year {topPlayer["YEARS_PLAYED"]} Top Shot Blocker: {topPlayer["PLAYER_NAME"]}: {topPlayer["BLK"]}")
+    print(f"Year {topPlayer["YEARS_PLAYED"]} Top Shot Blocker: {topPlayer["PLAYER_NAME"]}: {topPlayer["BLK"]}")
     return topPlayer
 
 # year = 5

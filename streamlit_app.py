@@ -9,10 +9,11 @@ st.title("NBA Career Analytics Project")
 st.subheader("Data Analysis Project")
 st.text('"Who was the best 5th year player in the 2025-26 NBA season?"')
 
-pro_about = ("This project uses NBA data to build an end-to-end analytics pipeline. The data will be used to make "
+pro_about = ("This project uses NBA data to build an end-to-end analytics pipeline. The data is used to make "
              "analysis on different types of statistics. The main goal is to group each NBA player to different stages "
-             "in their career and identify top performing players. This project extracts NBA data, cleans it up, "
-             "transforms it, and visualizes it.")
+             "in their career and identify top performing players. A custom standardized performance metric is "
+             "developed to evaluate each player. This project extracts NBA data, cleans it up, transforms it, and "
+             "visualizes it.")
 
 st.caption(pro_about)
 st.text("Player Eligibility:") #perhaps give a detail about player eligibility here
@@ -45,34 +46,41 @@ with tab1:
     st.subheader("Behind the Scenes:")
     with st.container(border=True):
         st.markdown("### :blue[:material/arrow_forward_ios: Data Extraction]")
-        # st.subheader("Data Extraction")
-        st.text("Retrieved active player statistics for the 2025–26 NBA season using the NBA Python API.")
-        st.text("Collected player information, season totals, and career experience data.")
-        st.text("Combined data into a unified dataset for analysis.")
+        st.text("Retrieved active player statistics for the 2025–26 NBA season using the NBA Python API.\n"
+                "\nCollected player information, season totals, and career experience data.\n"
+                "\nCombined data into a unified dataset for analysis.")
 
     with st.container(border=True):
         st.markdown("### :violet[:material/arrow_forward_ios: Data Cleaning]")
-        st.text("Removed unnecessary columns that were not relevant to the analysis.")
-        st.text("Reduced the dataset to players with meaningful playing time while preserving both starters and "
+        st.text("Removed unnecessary columns that were not relevant to the analysis.\n"
+                "\nReduced the dataset to players with meaningful playing time while preserving both starters and "
                 "key rotation players.")
 
     with st.container(border=True):
         st.markdown("### :green[:material/arrow_forward_ios: Data Transformation]")
-        st.text("Converted season totals into per-game averages.")
-        st.text("Engineered new features for statistical analysis.")
+        st.text("Converted season totals into per-game averages.\n"
+                "\nEngineered new features for statistical analysis.")
 
     with st.container(border=True):
         st.markdown("### :red[:material/arrow_forward_ios: Data Analysis]")
-        st.text("The project explores player performance through several analytical questions:")
-        st.text("- Top scorer by experience year"
+        st.text("The project explores player performance through several analytical questions:\n"
+                "\n- Top scorer by experience year"
                 "\n- Top rebounder by experience year"
                 "\n- Top playmaker by experience year "
                 "\n- Steals leader by experience year"
                 "\n- Blocks leader by experience year"
                 "\n- Best overall player by experience year")
-        st.text("A custom Standardized Performance Metric is calculated by combining standardized (z-score) values for "
+        st.text("A custom Standardized Performance Metric (SPM) is calculated by combining standardized (z-score) values for "
                 "points per games, rebounds per game, assists per game, steals per game, and blocks per game for "
                 "each player.")
+
+    with st.container(border=True):
+        st.markdown("### :yellow[:material/arrow_forward_ios: Model Interpretation]")
+        st.text("SPM is designed to measures a player's all-around production statistics by combining the standardized "
+                "values for points, rebounds, assists, blocks, ans steals.\n"
+                "\nThis metric focuses on box score production and rankings which may differ from media awards or "
+                "expert evaluations that also take advanced analytics into consideration.\n"
+                "\nThe goal is to produce a consistent and transparent framework for comparing players.")
 
     with st.container(border=True):
         st.markdown("### :gray[:material/arrow_forward_ios: Technology]")
@@ -86,7 +94,6 @@ with tab1:
                     | Dashboard | Streamlit |
                     """)
 with tab2:
-    # st.header("The one piece is reaaall")
     years_list = sorted(yg.yearsByGroup.index.unique())
     selected_year = st.selectbox("Select Year",years_list)
 
@@ -178,7 +185,7 @@ with tab3:
         st.dataframe(topSco)
 
 with tab4:
-    st.text("Stat averages per year")
+    # st.text("Stat averages per year")
     # option = ['Points', 'Rebounds', 'Assists', 'Blocks', 'Steals']
     # choices = st.selectbox("Select a stat:", option)
     # col_name = col_map[choices]
