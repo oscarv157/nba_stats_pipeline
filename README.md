@@ -11,15 +11,15 @@ stores in a database, and visualizes it.
 
 Experience Explorer:
 
-<img src="assets/Screenshot 2026-07-10 at 2.16.05 PM.png" width="400">
+<img src="assets/Screenshot 2026-07-10 at 2.16.05 PM.png" width="600">
 
 League Leaders:
 
-<img src="assets/Screenshot 2026-07-10 at 2.16.47 PM.png" width="400">
+<img src="assets/Screenshot 2026-07-10 at 2.16.47 PM.png" width="600">
 
 Career Trends: 
 
-<img src="assets/Screenshot 2026-07-10 at 2.17.39 PM.png" width="400">
+<img src="assets/Screenshot 2026-07-10 at 2.17.39 PM.png" width="600">
 
 
 Data Extraction:
