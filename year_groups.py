@@ -1,5 +1,4 @@
 import pandas as pd
-from tabulate import tabulate
 
 input_file = 'cleaned_data.csv'
 df = pd.read_csv(input_file)
